@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ACE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-server me-3"></i>ACE</h1>
+                    
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        
+                        <a href="index.html" class="nav-item nav-link"><i class="fa fa-rotate-left"></i> Pagina Inicial</a>
+                        <a href="projeto.html" class="nav-item nav-link"><i class="fa fa-address-card"></i> sobre o Projeto</a>
+                        <a href="videos.html" class="nav-item nav-link"><i class="fa fa-rocket"></i> Brinquedos Reciclaveis</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"> <i class="fa fa-newspaper-o"></i> Paginas</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="artigo.html" class="dropdown-item"><i class="fa fa-file-code"></i>Artigo</a>
+                                <a href="jogo.html" class="dropdown-item"><i class="fa fa-graduation-cap"></i>Jogo</a>
+                                <a href="Parceiros.html" class="dropdown-item"><i class="fa fa-handshake-o"></i> Parceiros</a>
+                                <a href="team.html" class="dropdown-item active"><i class="fa fa-users"></i> Sobre o time</a>
+                            </div>
+                        </div>
+                        <a href="contatos.html" class="nav-item nav-link"><i class="fa fa-phone"></i> Contatos</a>
+                    </div>
+                    <butaton type="button" class="btn text-secondary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fa fa-search"></i></butaton>
+                    <a href="Login/Login.html" class="btn btn-secondary py-2 px-4 ms-3">Login</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl py-5 bg-primary hero-header mb-5">
+                <div class="container my-5 py-5 px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-6 pt-5 text-center text-lg-start">
+                            <h1 class="display-4 text-white mb-4 animated slideInLeft">ACE</h1>
+                            <p class="text-white animated slideInLeft"> foi desenvolvido com o intuito de ajudar as pessoas seu objetivo é de forma positiva mostrar para as pessoas que objetos reciclaveis podem se tornar novos.</p>
+                            <a href="" class="btn btn-secondary py-sm-3 px-sm-5 me-3 animated slideInLeft">Vamos lá</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/pilot-boy-1.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Full Screen Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content" style="background: rgba(29, 40, 51, 0.8);">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center justify-content-center">
+                        <div class="input-group" style="max-width: 600px;">
+                            <input type="text" class="form-control bg-transparent border-light p-3" placeholder="Type search keyword">
+                            <button class="btn btn-light px-4"><i class="bi bi-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Full Screen Search End -->
+
+
+        <!-- Domain Search Start -->
+        <div class="container-xxl domain mb-5" style="margin-top: 90px;">
+            <div class="container px-lg-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="section-title position-relative text-center mx-auto mb-4 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                            <h1 class="mb-3">Ajude-nos</h1>
+                            <p class="mb-1">Seja voce tambem um colaborador do projeto ACE e nos ajude a mudar o mundo</p>
+                        </div>
+                        <div class="position-relative w-100 my-3 wow fadeInUp" data-wow-delay="0.3s">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Insira seu email ">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">seja colaborador</button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Domain Search End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="section-title position-relative mb-4 pb-4">
+                            <h1 class="mb-2">Porque Reciclar</h1>
+                        </div>
+                        <p class="mb-4">Existem muitas razões pelas quais é importante reciclar. Aqui estão algumas das principais razões:<br>
+
+                           1- Preservação dos recursos naturais: A reciclagem permite que os materiais usados sejam transformados em novos produtos, reduzindo a necessidade de extrair novas matérias-primas da natureza. Isso ajuda a preservar recursos naturais como madeira, minerais e petróleo.<br>
+                            
+                           2- Redução do desperdício: A reciclagem ajuda a reduzir o desperdício, uma vez que os materiais que de outra forma acabariam em aterros sanitários ou no meio ambiente são reutilizados. Isso reduz a quantidade de lixo que precisa ser enterrado e ajuda a proteger a saúde pública.<br>
+                            
+                           3- Redução da poluição: A reciclagem ajuda a reduzir a poluição do ar, água e solo, uma vez que menos recursos são usados e menos resíduos são produzidos. Isso pode ajudar a melhorar a qualidade do ar e da água, bem como reduzir a contaminação do solo.<br>
+                            
+                           4- Economia de energia: A reciclagem consome menos energia do que a produção de novos produtos a partir de matérias-primas virgens. Isso pode ajudar a reduzir as emissões de gases de efeito estufa e a economizar energia.<br>
+                            
+                           5- Criação de empregos: A reciclagem cria empregos na coleta, classificação, transporte e processamento de materiais recicláveis. Isso pode ajudar a impulsionar a economia local e nacional.<br>
+
+                            
+                            Por essas razões, reciclar é uma prática importante e valiosa para proteger o meio ambiente e garantir um futuro sustentável para todos.</p>
+                        <div class="row g-3">
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-toggle-right fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">20</h2>
+                                    <p class="mb-0">Videos</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="bg-light rounded text-center p-4">
+                                    <i class="fa fa-gears fa-2x text-primary mb-2"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">20</h2>
+                                    <p class="mb-0">Projetos</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/reciclagem.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Pricing Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Projetos praticos</h1>
+                    <p class="mb-1">Brinquedos recicláveis são uma ótima maneira de ensinar às crianças sobre a importância da sustentabilidade e da conservação do meio ambiente. Esses brinquedos são feitos de materiais reciclados, como papelão, garrafas plásticas, latas e outros objetos que podem ser encontrados em casa.</p>
+                </div>
+                <div class="row gy-5 gx-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-fighter-jet" style="color:white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <img class="img-fluid rounded-circle mb-4" src="img/aviao.png" alt="">
+                                <h4 class="fw-bold">Avião de Garrafa Pet</h4>
+                                
+                                <p class="mb-0"></p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">Clique para saber mais </p>
+                               
+                                <a class="btn btn-primary px-4 py-2" href="">Clicar</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-smile-o " style="color:white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <img class="img-fluid rounded-circle mb-4" src="img/boliche.png" alt="">
+                                <h4 class="fw-bold">Boliche de Garrafa Pet</h4>
+                                
+                                <p class="mb-0"></p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">Clique para saber mais </p>
+                               
+                                <a class="btn btn-primary px-4 py-2" href="">Clicar</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="position-relative shadow rounded border-top border-5 border-primary">
+                            <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-50 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                                <i class="fa fa-circle-o-notch" style="color:white"></i>
+                            </div>
+                            <div class="text-center border-bottom p-4 pt-5">
+                                <img class="img-fluid rounded-circle mb-4" src="img/argolas.png" alt="">
+                                <h4 class="fw-bold">Jogo de argolas</h4>
+                                <p class="mb-0"></p>
+                            </div>
+                            <div class="text-center border-bottom p-4">
+                                <p class="text-primary mb-1">Clique para saber mais</p>
+                               
+                                <a class="btn btn-primary px-4 py-2" href="">Clicar</a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+
+
+        
+
+
+        <!-- Testimonial Start -->
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                    <i class="fa fa-quote-left text-white"></i>
+                </div>
+                <p class="mt-3">Gostaríamos de lembrá-lo da importância da reciclagem e como ela pode ajudar a preservar nosso planeta. A reciclagem é uma forma simples e eficaz de reduzir a quantidade de lixo que produzimos e de conservar os recursos naturais.</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/SI_20230511_201038.jpg" style="width: 50px; height: 50px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">Santa Terezinha</h6>
+                        <small>Creche</small>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item position-relative bg-light border-top border-5 border-primary rounded p-4 my-4">
+                <div class="d-flex align-items-center justify-content-center position-absolute top-0 start-0 ms-5 translate-middle bg-primary rounded-circle" style="width: 45px; height: 45px; margin-top: -3px;">
+                    <i class="fa fa-quote-left text-white"></i>
+                </div>
+                <p class="mt-3">Cada um de nós podemos fazer a diferença ao reciclar materiais como papel, plástico, vidro e metal. Quando esses materiais são reciclados, eles podem ser transformados em novos produtos e reduzir a necessidade de extração de matérias-primas da natureza.</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/SI_20230413_214432.jpg" style="width: 50px; height: 50px;">
+                    <div class="ps-3">
+                        <h6 class="fw-bold mb-1">Campus Machado</h6>
+                        <small>Instituto Federal</small>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- Team Start -->
+        <div class="container-xxl py-5">
+            <div class="container px-lg-5">
+                <div class="section-title position-relative text-center mx-auto mb-5 pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Membros do Time Desenvolvedor do Projeto</h1>
+                    <p class="mb-1">Membros de um time desenvolvedor devem ter habilidades técnicas sólidas, trabalhar em equipe, ter pensamento crítico, ser dedicados, flexíveis, compreender o negócio, ter capacidade de aprendizagem e se adaptar às mudanças em constante evolução da tecnologia.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/IMG_20221120_215534_521.webp" alt="">
+                                <h5 class="fw-bold mb-1">Alex De Souza</h5>
+                                <small> Desenvolvedor</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/SI_20230413_214049.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Gleiceara Alves</h5>
+                                <small>Scrum Master</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/SI_20230413_220400.jpg" alt="">
+                                <h5 class="fw-bold mb-1">Leticia Vieira</h5>
+                                <small>Product Owner(Piou)</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item border-top border-5 border-primary rounded shadow overflow-hidden">
+                            <div class="text-center p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/SI_20230413_214432.jpg" alt="">
+                                <h5 class="fw-bold mb-1">If Sul De Minas</h5>
+                                <small>Parcerias</small>
+                            </div>
+                            <div class="d-flex justify-content-center bg-primary p-3">
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square text-primary bg-white m-1" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row gy-5 gx-4 pt-5">
+                    <div class="col-12">
+                        <h5 class="fw-bold text-white mb-4">Inscreva-se no Projeto</h5>
+                        <div class="position-relative" style="max-width: 400px;">
+                            <input class="form-control bg-white border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Digite seu email">
+                            <button type="button" class="btn btn-primary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Enviar</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="row gy-5 g-4">
+                            <div class="col-md-6">
+                                <h5 class="fw-bold text-white mb-4">Opções de navegação</h5>
+                                <a class="btn btn-link" href="">Sobre nós</a>
+                                <a class="btn btn-link" href="">Contatos</a>
+                                <a class="btn btn-link" href="">Politica de Privacidade</a>
+                                <a class="btn btn-link" href="">Termos & Condições</a>
+                                <a class="btn btn-link" href="">Suporte</a>
+                            </div>
+                            <div class="col-md-6">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h5 class="fw-bold text-white mb-4">Endereço da instituição responsavel</h5>
+                        <p class="mb-2"><i class="fa fa-map me-3"></i>
+                            Rodovia Machado - Paraguaçu, km 3 - Bairro Santo Antônio - Machado - MG - CEP 37.750-000</p>
+                        <p class="mb-2"><i class="fa fa-phone me-3"></i>(35) 3295-9700 </p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>comunica.machado@ifsuldeminas.edu.br</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mt-lg-n5">
+                        <div class="bg-light rounded" style="padding: 30px;">
+                            <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Nome">
+                            <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email">
+                            <textarea class="form-control border-0 mb-2" rows="2" placeholder="Mensagem"></textarea>
+                            <button class="btn btn-primary w-100 py-2">Enviar Mensagem</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">ACE </a>Copyright, 2023, Todos os direitos reservados. 
+							
+							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+							<a class="border-bottom" href="https://htmlcodex.com"></a>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <div class="footer-menu">
+                                <a href="">Pagina Inicial</a>
+                                <a href="">Cookies</a>
+                                <a href="">Ajuda</a>
+                                <a href="">FQAs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script
+</body>
+
+</html>
